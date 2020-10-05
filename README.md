@@ -7,7 +7,7 @@ Do-files for self learning \ tutored learning of basic stata programing.
 Provided are fake data for merging, append and playing around, and do-file for creating the fake data. 
 
 If \ when live course will be up will link videos. 
-### Syllabus
+## Syllabus
 Lesson 1 - getting around
 
 Lesson 2 - the basics
