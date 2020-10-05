@@ -1,5 +1,5 @@
 # stata_basic_programming
-This project is a course in basic and practical programming for economists (but also anyone else) in the Stata statistical programming language.
+This project is a course in basic and practical programming for BA students in economic (but also anyone else interested) in the Stata statistical programming language.
 
 ## Purpose
 Do-files for self learning \ tutored learning of basic stata programing. 
