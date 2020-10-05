@@ -173,20 +173,69 @@ describe
 
 *** 2. Uploading data
 
-* download
+* download data from 
+* https://github.com/dorlev3/stata_basic_programming/tree/main/data
+* specifically download "merge_data1.dta"
 
-2. uploading data.
-2.1. Upload an excel table.
-2.2. Upload a csv table.
-2.3. Upload a stata data set.
+* the directory you saved it into, 
+* i.e.: "C:\Users\DELL\Downloads"
+* type the name of the data after it, using the command "use"
 
-3. reading data
-3.1. Browse mode.
-3.2. Edit mode.
+help use
 
-4. saving data.
-*/
+* example:
+use "C:\Users\DELL\Downloads\merge_data1.dta" 
 
+* note the error - stata won't let us upload data since we have data in 
+* memory. to clean memory, type "clear"
+clear
+use "C:\Users\DELL\Downloads\merge_data1.dta" 
+
+* to shorten this, we just type together
+use "C:\Users\DELL\Downloads\merge_data1.dta" , clear
+
+* stata can also import csv, excel, sas and more different data types.
+* press tab file, and go to import, to manually import a data-table.
+
+
+*** 3. reading data
+* so we have seen this before, type "browse" or "br"
+* to look at the data
+browse
+br
+
+* note that in browse mode, we can only view the data,
+* not change it. If we were to open "edit" mode, 
+* then one can change the data directly. 
+* note that we can use "edit" mode to 
+edit
+
+* Tip: this is highly not recommened, since changes in edit
+* mode are not recored in do-file, so you won't know what you 
+* did to the data later on.
+
+*** 4. saving data.
+help save
+* we save stata data files, filename.dta, using the save command
+
+* example
+
+save filename
+
+* note that if the same name exists, we get an error
+* type again
+save filename
+
+* to save, we need to tell stata to replace the file
+save filename , replace
+
+* Tip: it is good practice to always specify rename after save command, 
+* so won't get error when running same do-file multiple times. 
+
+* Tip: specify file location to control where data is saved
+save "P:/personal/stata_lesson/outputs/data/saved_data_file_name" , replace
+
+* if you won't, stata will automatically save in working directory.
 
 ******************************************************
 *********** Lesson 4, manpiulating data  *************
@@ -702,6 +751,7 @@ graph save "${OutGraph}/mygraph.gph" ,  replace
 
 choose variables names you understand, if have time then label variables and labels,
 document - coming back after half year / year you won't remember anything, 
+putexcel, outreg, saving tables from stata output directly, logging
 use of _n, _N, replace in, set obs, 
 indention in looping, dynamic programming (e.g. in looping ranges), 
 globals as paths,
