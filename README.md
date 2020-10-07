@@ -10,13 +10,15 @@ If \ when live course will be up will link videos.
 
 ## How to use
 Instructors - download do file, use as structure for coding lessons. Can give do-file (part / whole) after lesson to students.
-Students - download lesson do-file by lesson order, and go over commands / read instructions. 
+
+Students - no prior coding knowledge is need. Download lesson do-file by lesson order, and go over commands / read instructions. Try excercises by yourself, and then see solution afterwards.
+
 ## Syllabus
 Lesson 1 - getting around
 
 Lesson 2 - the basics
 
-Lesson 3 - basic data
+Lesson 3 - data
 
 Lesson 4 - variables
 
